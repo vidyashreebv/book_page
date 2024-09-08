@@ -1,0 +1,44 @@
+[
+    {
+        "id": 1,
+        "title": "Introduction to Computer Science",
+        "description": "Learn the basics of computer science.",
+        "category": "Computer Science",
+        "price": 99.99
+    },
+    {
+        "id": 2,
+        "title": "Advanced JavaScript",
+        "description": "Deep dive into JavaScript.",
+        "category": "Programming",
+        "price": 129.99
+    },
+    {
+        "id": 3,
+        "title": "Data Science Fundamentals",
+        "description": "Introduction to data science and machine learning.",
+        "category": "Data Science",
+        "price": 149.99
+    },
+    {
+        "id": 4,
+        "title": "Web Development Bootcamp",
+        "description": "Learn full-stack web development.",
+        "category": "Web Development",
+        "price": 199.99
+    },
+    {
+        "id": 5,
+        "title": "UX/UI Design",
+        "description": "Principles of user experience and interface design.",
+        "category": "Design",
+        "price": 89.99
+    },
+    {
+        "id": 6,
+        "title": "Machine Learning with Python",
+        "description": "Build machine learning models using Python.",
+        "category": "Machine Learning",
+        "price": 159.99
+    }
+]
