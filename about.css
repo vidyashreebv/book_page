@@ -1,0 +1,184 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    background-color: #f4f4f4;
+}
+
+/* Header Styling */
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: #f8f9fa;
+    border-bottom: 1px solid #e7e7e7;
+}
+
+/* Site Title Styling */
+.site-title {
+    margin-left: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.site-title h1 {
+    margin: 0;
+    font-size: 3rem;
+    font-family: 'Rowdies', sans-serif;
+}
+
+/* Navigation Bar Styling */
+nav {
+    margin-left: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    z-index: 1000;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 50px;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    margin-right: 20px;
+    transition: color 0.3s;
+}
+
+nav a {
+    text-decoration: none;
+    color: #333;
+    font-size: 1.25rem;
+}
+
+nav a:hover {
+    color: #007bff;
+    background: #c5ced8;
+    padding: 10px 20px;
+    border-radius: 10%;
+    transition: all 0.3s ease;
+}
+
+/* Mobile Menu Button Styling */
+.checkbtn {
+    font-size: 30px;
+    color: white;
+    cursor: pointer;
+    display: none;
+}
+
+#check {
+    display: none;
+}
+
+/* Media Queries for Responsive Design */
+
+/* Tablet and Mobile Devices (max-width: 768px) */
+@media (max-width: 768px) {
+    .checkbtn {
+        display: block;
+        color: #333;
+        margin-right: 20px;
+    }
+
+    nav ul {
+        position: fixed;
+        top: 80px;
+        right: -100%;
+        width: 100%;
+        height: 100vh;
+        background-color: #f8f9fa;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        transition: right 0.3s ease-in-out;
+        z-index: 1;
+    }
+
+    nav ul li {
+        margin: 20px 0;
+    }
+
+    nav a {
+        font-size: 1.5rem;
+        color: #333;
+        text-decoration: none;
+    }
+
+    #check:checked ~ nav ul {
+        right: 0;
+    }
+}
+
+/* Subscribe Section Styling */
+.subscribe {
+    padding: 20px;
+    background-color: #f8f9fa;
+    text-align: center;
+}
+
+.subscribe h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+    font-family: 'Rowdies', sans-serif;
+}
+
+.subscribe p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+/* Subscribe Form Styling */
+.subscribe-form {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.subscribe-form input[type="email"] {
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 300px;
+}
+
+.subscribe-form button {
+    padding: 10px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 4px;
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+}
+
+.subscribe-form button:hover {
+    background-color: #0056b3;
+}
+
+/* Footer Styling */
+footer {
+    padding: 20px;
+    text-align: center;
+    background-color: #f8f9fa;
+    border-top: 1px solid #e7e7e7;
+}
+
+.footer-icons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.footer-icons .icon img {
+    width: 40px;
+    height: auto;
+}
